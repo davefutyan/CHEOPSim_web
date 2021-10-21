@@ -1,0 +1,478 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\providecommand \oddpage@label [2]{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}General Description}{3}{section.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}context}{3}{subsection.1.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces CHEOPS data flow diagram. The output of CHEOPSim can be used as input to either the Data Reduction (L0.5) or to the Data Flow Simulator (S0.5).}}{3}{figure.1}}
+\newlabel{fig:dataflow}{{1}{3}{CHEOPS data flow diagram. The output of CHEOPSim can be used as input to either the Data Reduction (L0.5) or to the Data Flow Simulator (S0.5)}{figure.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Components}{4}{subsection.1.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Software Overview}{4}{subsection.1.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Configuration}{5}{section.2}}
+\newlabel{sec:config}{{2}{5}{Configuration}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Visit Configuration}{5}{subsection.2.1}}
+\newlabel{sec:time}{{2.1}{5}{Visit Configuration}{subsection.2.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Input parameters to define the Visit configuration using MPS\_PRE\_Visits}}{6}{table.1}}
+\newlabel{tab:time1}{{1}{6}{Input parameters to define the Visit configuration using MPS\_PRE\_Visits}{table.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Input parameters to define the Visit configuration manually (part 1)}}{7}{table.2}}
+\newlabel{tab:time2}{{2}{7}{Input parameters to define the Visit configuration manually (part 1)}{table.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Input parameters to define the Visit configuration manually (part 2)}}{8}{table.3}}
+\newlabel{tab:time3}{{3}{8}{Input parameters to define the Visit configuration manually (part 2)}{table.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Source Simulator}{9}{section.3}}
+\newlabel{sec:Source}{{3}{9}{Source Simulator}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Field of View and Stellar Flux: {\it  StarProducer}}{9}{subsection.3.1}}
+\newlabel{sec:StarProducer}{{3.1}{9}{Field of View and Stellar Flux: {\it StarProducer}}{subsection.3.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}Field of View}{9}{subsubsection.3.1.1}}
+\newlabel{sec:fov}{{3.1.1}{9}{Field of View}{subsubsection.3.1.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Definition of Field of View with respect to the CCD dimensions.}}{10}{figure.2}}
+\newlabel{fig:fov}{{2}{10}{Definition of Field of View with respect to the CCD dimensions}{figure.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Input parameters to define the field of view}}{11}{table.4}}
+\newlabel{tab:fovInputs}{{4}{11}{Input parameters to define the field of view}{table.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2}Star Field}{12}{subsubsection.3.1.2}}
+\newlabel{sec:stars}{{3.1.2}{12}{Star Field}{subsubsection.3.1.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Input parameters for each star}}{13}{table.5}}
+\newlabel{tab:star}{{5}{13}{Input parameters for each star}{table.5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.3}Background Star Field}{14}{subsubsection.3.1.3}}
+\newlabel{sec:starField}{{3.1.3}{14}{Background Star Field}{subsubsection.3.1.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Background Star Fields}}{14}{table.6}}
+\newlabel{tab:starFields}{{6}{14}{Background Star Fields}{table.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Input parameters for background star field generation}}{14}{table.7}}
+\newlabel{tab:backgroundStars}{{7}{14}{Input parameters for background star field generation}{table.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Background star fields - click for larger versions: low (left), medium (centre) and extreme (right), as defined in Table\nobreakspace  {}\ref  {tab:starFields}. Stars located within the inner circle can enter the sub-array (inner square) at some point during field of view rotation. Stars located within the outer circle can generate frame transfer smear trails (see Section\nobreakspace  {}\ref  {sec:FrameTransferSmearer}) which can cross the sub-array at some point during field of view rotation. The area of each marker is proportional to the stellar flux. The magnitudes indicated in the scale on the right are CHEOPS magnitudes. The open red circle represents the default aperture used in the photometric extration (radius 32.5 pixels). The filled red circle represents the approximate size of the PSF excluding tails (radius 12 pixels).}}{15}{figure.3}}
+\newlabel{fig:backgroundStars}{{3}{15}{Background star fields - click for larger versions: low (left), medium (centre) and extreme (right), as defined in Table~\ref {tab:starFields}. Stars located within the inner circle can enter the sub-array (inner square) at some point during field of view rotation. Stars located within the outer circle can generate frame transfer smear trails (see Section~\ref {sec:FrameTransferSmearer}) which can cross the sub-array at some point during field of view rotation. The area of each marker is proportional to the stellar flux. The magnitudes indicated in the scale on the right are CHEOPS magnitudes. The open red circle represents the default aperture used in the photometric extration (radius 32.5 pixels). The filled red circle represents the approximate size of the PSF excluding tails (radius 12 pixels)}{figure.3}{}}
+\citation{PHOENIX}
+\citation{stellarParameters}
+\citation{stellarParameters}
+\citation{stellarParameters}
+\citation{stellarParameters}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.4}Flux Calculation}{16}{subsubsection.3.1.4}}
+\newlabel{sec:flux}{{3.1.4}{16}{Flux Calculation}{subsubsection.3.1.4}{}}
+\newlabel{eq:planck}{{1}{16}{Flux Calculation}{equation.3.1}{}}
+\newlabel{eq:fluxnorm}{{2}{16}{Flux Calculation}{equation.3.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Left: flux spectrum of Vega. Right: Gaia passband and V-band transmission curves, with the CHEOPS global throughput shown for comparison.}}{17}{figure.4}}
+\newlabel{fig:fluxnorm}{{4}{17}{Left: flux spectrum of Vega. Right: Gaia passband and V-band transmission curves, with the CHEOPS global throughput shown for comparison}{figure.4}{}}
+\newlabel{eq:mag}{{3}{17}{Flux Calculation}{equation.3.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Photon flux spectra normalised to V-band magnitude 9, for a selection of spectral types, for PHOENIX SED models (blue) and a Planck black body model (green). The normalisation is such that the integral is the same in the V-band (peaking at 500-600nm, see Figure\nobreakspace  {}\ref  {fig:fluxnorm}).}}{18}{figure.5}}
+\newlabel{fig:seds}{{5}{18}{Photon flux spectra normalised to V-band magnitude 9, for a selection of spectral types, for PHOENIX SED models (blue) and a Planck black body model (green). The normalisation is such that the integral is the same in the V-band (peaking at 500-600nm, see Figure~\ref {fig:fluxnorm})}{figure.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Effective temperature, stellar radius and stellar mass assigned to spectral types O7 to F9. Values are taken from \cite  {stellarParameters}. The stellar radius is calculated from the luminosity and the effective temperature using the relation $L=4\pi R^2 \sigma T_{eff}^4$, assuming $\sigma =5.67036\times 10^{-8}$\nobreakspace  {}kg s$^{-3}$ K$^{-4}$ and $L_{\odot }=3.828\times 10^{26}$\nobreakspace  {}W. Values assumed for the solar standard gravitational parameter, $\mu _{\odot }=G\cdot M_{\odot }$, and the solar radius, $R_{\odot }$, are 132712440018\nobreakspace  {}km$^3$s$^{-2}$ and 696342\nobreakspace  {}km, respectively.}}{19}{table.8}}
+\newlabel{tab:starProperties1}{{8}{19}{Effective temperature, stellar radius and stellar mass assigned to spectral types O7 to F9. Values are taken from \cite {stellarParameters}. The stellar radius is calculated from the luminosity and the effective temperature using the relation $L=4\pi R^2 \sigma T_{eff}^4$, assuming $\sigma =5.67036\times 10^{-8}$~kg s$^{-3}$ K$^{-4}$ and $L_{\odot }=3.828\times 10^{26}$~W. Values assumed for the solar standard gravitational parameter, $\mu _{\odot }=G\cdot M_{\odot }$, and the solar radius, $R_{\odot }$, are 132712440018~km$^3$s$^{-2}$ and 696342~km, respectively}{table.8}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Effective temperature, stellar radius and stellar mass assigned to spectral types G0 to M9. Values are taken from \cite  {stellarParameters}. The stellar radius is calculated from the luminosity and the effective temperature using the relation $L=4\pi R^2 \sigma T_{eff}^4$, assuming $\sigma =5.67036\times 10^{-8}$\nobreakspace  {}kg s$^{-3}$ K$^{-4}$ and $L_{\odot }=3.828\times 10^{26}$\nobreakspace  {}W. Values assumed for the solar standard gravitational parameter, $\mu _{\odot }=G\cdot M_{\odot }$, and the solar radius, $R_{\odot }$, are 132712440018\nobreakspace  {}km$^3$s$^{-2}$ and 696342\nobreakspace  {}km, respectively.}}{20}{table.9}}
+\newlabel{tab:starProperties2}{{9}{20}{Effective temperature, stellar radius and stellar mass assigned to spectral types G0 to M9. Values are taken from \cite {stellarParameters}. The stellar radius is calculated from the luminosity and the effective temperature using the relation $L=4\pi R^2 \sigma T_{eff}^4$, assuming $\sigma =5.67036\times 10^{-8}$~kg s$^{-3}$ K$^{-4}$ and $L_{\odot }=3.828\times 10^{26}$~W. Values assumed for the solar standard gravitational parameter, $\mu _{\odot }=G\cdot M_{\odot }$, and the solar radius, $R_{\odot }$, are 132712440018~km$^3$s$^{-2}$ and 696342~km, respectively}{table.9}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Input parameters for stellar flux calculation}}{21}{table.10}}
+\newlabel{tab:flux}{{10}{21}{Input parameters for stellar flux calculation}{table.10}{}}
+\citation{MandelAgol}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Transit Model: {\it  TransitFluxModulator}}{22}{subsection.3.2}}
+\newlabel{sec:TransitFluxModulator}{{3.2}{22}{Transit Model: {\it TransitFluxModulator}}{subsection.3.2}{}}
+\newlabel{eq:transit1}{{4}{22}{Transit Model: {\it TransitFluxModulator}}{equation.3.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Input parameters required to define the transit curve for a given star}}{23}{table.11}}
+\newlabel{tab:transit}{{11}{23}{Input parameters required to define the transit curve for a given star}{table.11}{}}
+\citation{MandelAgol}
+\citation{AgolCode}
+\citation{limbDarkening_code}
+\citation{limbDarkening}
+\citation{limbDarkening_code}
+\citation{limbDarkening_code}
+\citation{claret_bloeman}
+\citation{stellarParameters}
+\citation{limbDarkening_code}
+\citation{stellarParameters}
+\citation{limbDarkening_code}
+\citation{stellarParameters}
+\citation{limbDarkening_code}
+\citation{stellarParameters}
+\citation{limbDarkening_code}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}Limb Darkening}{24}{subsubsection.3.2.1}}
+\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces Input parameters for the Espinoza \& Jordan algorithm\nobreakspace  {}\cite  {limbDarkening_code} used to calculate the limb darkening coefficients.}}{24}{table.12}}
+\newlabel{tab:limb_inputs}{{12}{24}{Input parameters for the Espinoza \& Jordan algorithm~\cite {limbDarkening_code} used to calculate the limb darkening coefficients}{table.12}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces Values for effective temperature, and surface gravity $g=g_{\odot }m/r^2$, where $m$ is the stellar mass in multiples of $M_{\odot }$ and $r$ is the stellar radius in multiples of $R_{\odot }$, and $g_{\odot }$ is the surface gravity of the Sun, used as input for the calculation of the limb darkening coefficients, together with the values of the calculated coefficients, for spectral types O7 to F9. Values for $m$ and $r$ are taken from \nobreakspace  {}\cite  {stellarParameters}, and the value log($g_{\odot }$) = 4.43812 is taken from https://sites.google.com/site/mamajeksstarnotes/basic-astronomical-data-for-the-sun. The effective temperatures for the hottest stars are fixed by the algorithm\nobreakspace  {}\cite  {limbDarkening_code}.}}{25}{table.13}}
+\newlabel{tab:limb1}{{13}{25}{Values for effective temperature, and surface gravity $g=g_{\odot }m/r^2$, where $m$ is the stellar mass in multiples of $M_{\odot }$ and $r$ is the stellar radius in multiples of $R_{\odot }$, and $g_{\odot }$ is the surface gravity of the Sun, used as input for the calculation of the limb darkening coefficients, together with the values of the calculated coefficients, for spectral types O7 to F9. Values for $m$ and $r$ are taken from ~\cite {stellarParameters}, and the value log($g_{\odot }$) = 4.43812 is taken from https://sites.google.com/site/mamajeksstarnotes/basic-astronomical-data-for-the-sun. The effective temperatures for the hottest stars are fixed by the algorithm~\cite {limbDarkening_code}}{table.13}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {14}{\ignorespaces Values for effective temperature, and surface gravity $g=g_{\odot }m/r^2$, where $m$ is the stellar mass in multiples of $M_{\odot }$ and $r$ is the stellar radius in multiples of $R_{\odot }$, and $g_{\odot }$ is the surface gravity of the Sun, used as input for the calculation of the limb darkening coefficients, together with the values of the calculated coefficients, for spectral types G0 to M9. Values for $m$ and $r$ are taken from \nobreakspace  {}\cite  {stellarParameters}, and the value log($g_{\odot }$) = 4.43812 is taken from https://sites.google.com/site/mamajeksstarnotes/basic-astronomical-data-for-the-sun. The effective temperatures for the coolest stars are fixed by the algorithm\nobreakspace  {}\cite  {limbDarkening_code}.}}{26}{table.14}}
+\newlabel{tab:limb2}{{14}{26}{Values for effective temperature, and surface gravity $g=g_{\odot }m/r^2$, where $m$ is the stellar mass in multiples of $M_{\odot }$ and $r$ is the stellar radius in multiples of $R_{\odot }$, and $g_{\odot }$ is the surface gravity of the Sun, used as input for the calculation of the limb darkening coefficients, together with the values of the calculated coefficients, for spectral types G0 to M9. Values for $m$ and $r$ are taken from ~\cite {stellarParameters}, and the value log($g_{\odot }$) = 4.43812 is taken from https://sites.google.com/site/mamajeksstarnotes/basic-astronomical-data-for-the-sun. The effective temperatures for the coolest stars are fixed by the algorithm~\cite {limbDarkening_code}}{table.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Transit light curves obtained using the default parameter values defined in Table\nobreakspace  {}\ref  {tab:transit} (Neptune with orbit period 2 days and zero impact parameter), for spectral types from O7 to F9.}}{27}{figure.6}}
+\newlabel{fig:incidentLightCurve1}{{6}{27}{Transit light curves obtained using the default parameter values defined in Table~\ref {tab:transit} (Neptune with orbit period 2 days and zero impact parameter), for spectral types from O7 to F9}{figure.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Transit light curves obtained using the default parameter values defined in Table\nobreakspace  {}\ref  {tab:transit} (Neptune with orbit period 2 days and zero impact parameter), for spectral types from G0 to M9.}}{28}{figure.7}}
+\newlabel{fig:incidentLightCurve2}{{7}{28}{Transit light curves obtained using the default parameter values defined in Table~\ref {tab:transit} (Neptune with orbit period 2 days and zero impact parameter), for spectral types from G0 to M9}{figure.7}{}}
+\citation{granularity}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Stellar Noise: {\it  StellarNoiseFluxModulator}}{29}{subsection.3.3}}
+\newlabel{sec:StellarNoiseFluxModulator}{{3.3}{29}{Stellar Noise: {\it StellarNoiseFluxModulator}}{subsection.3.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Time series showing fluctuations in stellar output due to granulation, in steps of 15 seconds, for a selection of spectral types.}}{30}{figure.8}}
+\newlabel{fig:granulation}{{8}{30}{Time series showing fluctuations in stellar output due to granulation, in steps of 15 seconds, for a selection of spectral types}{figure.8}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {15}{\ignorespaces Effective temperature, stellar radius and stellar mass used to derive the granulation time series assigned to each spectral type.}}{31}{table.15}}
+\newlabel{tab:granulation_params}{{15}{31}{Effective temperature, stellar radius and stellar mass used to derive the granulation time series assigned to each spectral type}{table.15}{}}
+\citation{variation}
+\citation{HelenGiles}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Stellar Variation: {\it  StellarVariationFluxModulator}}{32}{subsection.3.4}}
+\newlabel{sec:StellarVariationFluxModulator}{{3.4}{32}{Stellar Variation: {\it StellarVariationFluxModulator}}{subsection.3.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {16}{\ignorespaces Input parameters required to define the stellar variation for a given star}}{32}{table.16}}
+\newlabel{tab:variation}{{16}{32}{Input parameters required to define the stellar variation for a given star}{table.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Stellar variation modulation curve with 20 day duration for a K4 star with rotation period 8.3 days, using the default random seed.}}{33}{figure.9}}
+\newlabel{fig:variation1}{{9}{33}{Stellar variation modulation curve with 20 day duration for a K4 star with rotation period 8.3 days, using the default random seed}{figure.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Stellar variation modulation curve with 20 day duration for a K4 star with rotation period 8.3 days, using the default random seed, combined with the output of the StellarNoiseFluxModulator and TransitFluxModulator modules using their default settings.}}{33}{figure.10}}
+\newlabel{fig:variation2}{{10}{33}{Stellar variation modulation curve with 20 day duration for a K4 star with rotation period 8.3 days, using the default random seed, combined with the output of the StellarNoiseFluxModulator and TransitFluxModulator modules using their default settings}{figure.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Zoom on one of the transits in Figure\nobreakspace  {}\ref  {fig:variation2}.}}{33}{figure.11}}
+\newlabel{fig:variation3}{{11}{33}{Zoom on one of the transits in Figure~\ref {fig:variation2}}{figure.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}User Flux Fime Series: {\it  UserFluxModifier}}{34}{subsection.3.5}}
+\newlabel{sec:UserFluxModifier}{{3.5}{34}{User Flux Fime Series: {\it UserFluxModifier}}{subsection.3.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {17}{\ignorespaces Columns to be provided in the ascii file for the case of a stellar flux time series being uploaded by the user. The time series must be provided as a plain ascii file containing the columns indicated, separated by whitespace or tab. Note that there is a gap of 30s between the start of a visit and the start of the first exposure if there is no initial full frame image, and 35s plus the duration of one exposure if there is an initial full frame image. Rows for which the first character is \# are ignored.}}{34}{table.17}}
+\newlabel{tab:userFluxFormat}{{17}{34}{Columns to be provided in the ascii file for the case of a stellar flux time series being uploaded by the user. The time series must be provided as a plain ascii file containing the columns indicated, separated by whitespace or tab. Note that there is a gap of 30s between the start of a visit and the start of the first exposure if there is no initial full frame image, and 35s plus the duration of one exposure if there is an initial full frame image. Rows for which the first character is \# are ignored}{table.17}{}}
+\citation{HST_ETC}
+\citation{HST_ETC}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}Zodiacal Light: {\it  ZodiacalLightGenerator}}{35}{subsection.3.6}}
+\newlabel{sec:ZodiacalLightGenerator}{{3.6}{35}{Zodiacal Light: {\it ZodiacalLightGenerator}}{subsection.3.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Sky background intensity as a function of wavelength. The total sky spectrum (black) for the “high-background” case adopted in the WFC3 ETC, along with the individual contributions from zodiacal light and earth-shine. These data correspond to a V-band surface brightness of 22.1 mag arcsec$^{−2}$. The geocoronal emission line [O II] 2471 Å has a flux of $1.5\times 10^{−15}$ erg cm$^{-2}$ s$^{-1}$ \r A$^{-1}$ arcsec$^{-2}$, extending beyond the upper limit of the plot.}}{35}{figure.12}}
+\newlabel{fig:zodiacal_vs_wavelength}{{12}{35}{Sky background intensity as a function of wavelength. The total sky spectrum (black) for the “high-background” case adopted in the WFC3 ETC, along with the individual contributions from zodiacal light and earth-shine. These data correspond to a V-band surface brightness of 22.1 mag arcsec$^{−2}$. The geocoronal emission line [O II] 2471 Å has a flux of $1.5\times 10^{−15}$ erg cm$^{-2}$ s$^{-1}$ \AA $^{-1}$ arcsec$^{-2}$, extending beyond the upper limit of the plot}{figure.12}{}}
+\newlabel{eq:zodiacal_vs_wavelength}{{5}{35}{Zodiacal Light: {\it ZodiacalLightGenerator}}{equation.3.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {18}{\ignorespaces Sky background intensity, corresponding to a V-band surface brightness of 22.1 mag arcsec$^{−2}$, as a function of wavelength in 500\r A\ steps.}}{37}{table.18}}
+\newlabel{tab:zodiacal_vs_wavelength}{{18}{37}{Sky background intensity, corresponding to a V-band surface brightness of 22.1 mag arcsec$^{−2}$, as a function of wavelength in 500\AA \ steps}{table.18}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {19}{\ignorespaces Approximate zodiacal sky background, in V-mag per arcsec$^2$, as a function of the difference in ecliptic longitude and ecliptic latitude between the pointing direction and the position of the sun. SA stands for Solar Avoidance zone (pointing within 50 deg of the sun), where observations may not be made.}}{37}{table.19}}
+\newlabel{tab:zodiacal_vs_direction}{{19}{37}{Approximate zodiacal sky background, in V-mag per arcsec$^2$, as a function of the difference in ecliptic longitude and ecliptic latitude between the pointing direction and the position of the sun. SA stands for Solar Avoidance zone (pointing within 50 deg of the sun), where observations may not be made}{table.19}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7}Stray Light: {\it  StrayLightGenerator}}{38}{subsection.3.7}}
+\newlabel{sec:StrayLightGenerator}{{3.7}{38}{Stray Light: {\it StrayLightGenerator}}{subsection.3.7}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {20}{\ignorespaces Input parameters for the stray light model}}{38}{table.20}}
+\newlabel{tab:strayLightScenarios}{{20}{38}{Input parameters for the stray light model}{table.20}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {21}{\ignorespaces Columns to be provided in the ascii file for the case of a stray light time series being uploaded by the user. The time series must be provided as a plain ascii file containing the columns indicated (any additional columns will be ignored), separated by whitespace or tab. Rows for which the first character is \# are ignored. It is required that the value of the time in the last row is either longer than the total length of the simulation (including a gap of 30s plus the full frame exposure duration at the start of the visit), or is equal to the default orbit period of 98.5 minutes, in which case the content will be repeated with this periodicity.}}{38}{table.21}}
+\newlabel{tab:strayLightUploadFormat}{{21}{38}{Columns to be provided in the ascii file for the case of a stray light time series being uploaded by the user. The time series must be provided as a plain ascii file containing the columns indicated (any additional columns will be ignored), separated by whitespace or tab. Rows for which the first character is \# are ignored. It is required that the value of the time in the last row is either longer than the total length of the simulation (including a gap of 30s plus the full frame exposure duration at the start of the visit), or is equal to the default orbit period of 98.5 minutes, in which case the content will be repeated with this periodicity}{table.21}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Stray light intensity as a function of the orbit for a 6am RAAN sun synchronous orbit with altitude of 640km, for five scenarios corresponding to start dates and pointing directions as indicated in Table\nobreakspace  {}\ref  {tab:strayLightScenarios}. The same information is shown on a linear (top) and logarithmic (bottom) scale.}}{39}{figure.13}}
+\newlabel{fig:strayLight}{{13}{39}{Stray light intensity as a function of the orbit for a 6am RAAN sun synchronous orbit with altitude of 640km, for five scenarios corresponding to start dates and pointing directions as indicated in Table~\ref {tab:strayLightScenarios}. The same information is shown on a linear (top) and logarithmic (bottom) scale}{figure.13}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {22}{\ignorespaces Input parameters for the stray light model}}{40}{table.22}}
+\newlabel{tab:strayLight}{{22}{40}{Input parameters for the stray light model}{table.22}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Satellite Simulator}{41}{section.4}}
+\newlabel{sec:Satellite}{{4}{41}{Satellite Simulator}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Jitter Model: {\it  JitterProducer}}{41}{subsection.4.1}}
+\newlabel{sec:JitterProducer}{{4.1}{41}{Jitter Model: {\it JitterProducer}}{subsection.4.1}{}}
+\@writefile{toc}{\contentsline {subparagraph}{48hrAOCSTimeseries2016\_simu*\_1s.fits}{41}{section*.2}}
+\@writefile{toc}{\contentsline {subparagraph}{All other AOCS time series}{41}{section*.3}}
+\@writefile{lot}{\contentsline {table}{\numberline {23}{\ignorespaces Columns to be provided in the ascii file for the case of a jitter time series being uploaded by the user. The time series must be provided as a plain ascii file containing the columns indicated, separated by whitespace or tab. Rows for which the first character is \# are ignored. The cadence must be 1 second and the total number of rows must not exceed $3600\times 48=172800$ (i.e. max 48 hour time series).}}{42}{table.23}}
+\newlabel{tab:jitterUploadFormat}{{23}{42}{Columns to be provided in the ascii file for the case of a jitter time series being uploaded by the user. The time series must be provided as a plain ascii file containing the columns indicated, separated by whitespace or tab. Rows for which the first character is \# are ignored. The cadence must be 1 second and the total number of rows must not exceed $3600\times 48=172800$ (i.e. max 48 hour time series)}{table.23}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {24}{\ignorespaces Input parameters for the jitter model}}{43}{table.24}}
+\newlabel{tab:jitterParameters}{{24}{43}{Input parameters for the jitter model}{table.24}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {25}{\ignorespaces AOCS jitter time series options. The quoted RMS values are ($\sqrt  {rms(pitch)^2+rms(yaw)^2}$).}}{44}{table.25}}
+\newlabel{tab:jitter}{{25}{44}{AOCS jitter time series options. The quoted RMS values are ($\sqrt {rms(pitch)^2+rms(yaw)^2}$)}{table.25}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {26}{\ignorespaces AOCS jitter time series options (continued). The payload in the loop column indicates whether or not interruptions due to SAA and Earth occultations are included.}}{45}{table.26}}
+\newlabel{tab:jitter2}{{26}{45}{AOCS jitter time series options (continued). The payload in the loop column indicates whether or not interruptions due to SAA and Earth occultations are included}{table.26}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {27}{\ignorespaces AOCS jitter time series plots}}{46}{table.27}}
+\newlabel{tab:jitterPlots1}{{27}{46}{AOCS jitter time series plots}{table.27}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {28}{\ignorespaces AOCS jitter time series plots (continued)}}{47}{table.28}}
+\newlabel{tab:jitterPlots2}{{28}{47}{AOCS jitter time series plots (continued)}{table.28}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {29}{\ignorespaces AOCS jitter time series plots (continued)}}{48}{table.29}}
+\newlabel{tab:jitterPlots3}{{29}{48}{AOCS jitter time series plots (continued)}{table.29}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {30}{\ignorespaces AOCS jitter time series plots (continued)}}{49}{table.30}}
+\newlabel{tab:jitterPlots4}{{30}{49}{AOCS jitter time series plots (continued)}{table.30}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {31}{\ignorespaces AOCS jitter time series plots (continued)}}{50}{table.31}}
+\newlabel{tab:jitterPlots5}{{31}{50}{AOCS jitter time series plots (continued)}{table.31}{}}
+\citation{rollAngleAlgo}
+\citation{rollAngleAlgo}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Orbit Model: {\it  OrbitSimulator}}{51}{subsection.4.2}}
+\newlabel{sec:OrbitSimulator}{{4.2}{51}{Orbit Model: {\it OrbitSimulator}}{subsection.4.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}Orbit Trajectory, Pointing Jitter and Roll Angle}{51}{subsubsection.4.2.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Roll angle of spacecraft as a function of time for one complete orbit, for several values of the angle between the pointing direction and the orbital plane. By default, the 10 degree case (cyan) applies to all cases where the angle between the pointing direction and the orbital plane is less than or equal to 10 degrees, in order to avoid the spike in roll rate when the spacecraft passes over the poles. Thus the curves shown for smaller angles between the pointing direction and orbital plane will only be simulated if the value of the input parameter which defines the limiting angle is reduced.}}{52}{figure.14}}
+\newlabel{fig:rollAngle}{{14}{52}{Roll angle of spacecraft as a function of time for one complete orbit, for several values of the angle between the pointing direction and the orbital plane. By default, the 10 degree case (cyan) applies to all cases where the angle between the pointing direction and the orbital plane is less than or equal to 10 degrees, in order to avoid the spike in roll rate when the spacecraft passes over the poles. Thus the curves shown for smaller angles between the pointing direction and orbital plane will only be simulated if the value of the input parameter which defines the limiting angle is reduced}{figure.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Roll rate of spacecraft as a function of time for one complete orbit, for several values of the angle between the pointing direction and the orbital plane. By default, the 10 degree case (cyan) applies to all cases where the angle between the pointing direction and the orbital plane is less than or equal to 10 degrees, in order to avoid a spike in roll rate when the spacecraft passes over the poles. Thus the curves shown for smaller angles between the pointing direction and orbital plane will only be simulated if the value of the input parameter which defines the limiting angle is reduced.}}{53}{figure.15}}
+\newlabel{fig:rollRate}{{15}{53}{Roll rate of spacecraft as a function of time for one complete orbit, for several values of the angle between the pointing direction and the orbital plane. By default, the 10 degree case (cyan) applies to all cases where the angle between the pointing direction and the orbital plane is less than or equal to 10 degrees, in order to avoid a spike in roll rate when the spacecraft passes over the poles. Thus the curves shown for smaller angles between the pointing direction and orbital plane will only be simulated if the value of the input parameter which defines the limiting angle is reduced}{figure.15}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2}South Atlantic Anomaly (SAA) Flag, angles to Sun, Moon and Earth Limb, and Earth Occultation Flag}{54}{subsubsection.4.2.2}}
+\newlabel{sec:SAA}{{4.2.2}{54}{South Atlantic Anomaly (SAA) Flag, angles to Sun, Moon and Earth Limb, and Earth Occultation Flag}{subsubsection.4.2.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces SAA map for altitude 700km}}{54}{figure.16}}
+\newlabel{fig:SAAMap}{{16}{54}{SAA map for altitude 700km}{figure.16}{}}
+\citation{payload_calibration}
+\citation{payload_calibration}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3}Temperature Models}{56}{subsubsection.4.2.3}}
+\newlabel{sec:temperatureModels}{{4.2.3}{56}{Temperature Models}{subsubsection.4.2.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Telescope temperature as a function of time provided by the default input file.}}{56}{figure.17}}
+\newlabel{fig:telescopeTemperature}{{17}{56}{Telescope temperature as a function of time provided by the default input file}{figure.17}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {32}{\ignorespaces Nominal temperature, and the RMS used to define the Gaussian $\sigma $ to generate temperatures with random fluctuations for the image metadata and housekeeping data, to simulate measurement uncertainty. The Gaussian $\sigma $ correspond to the observed RMS of temperature measurements in the payload ground calibration\nobreakspace  {}\cite  {payload_calibration}.}}{57}{table.32}}
+\newlabel{tab:temperatureFluctuation}{{32}{57}{Nominal temperature, and the RMS used to define the Gaussian $\sigma $ to generate temperatures with random fluctuations for the image metadata and housekeeping data, to simulate measurement uncertainty. The Gaussian $\sigma $ correspond to the observed RMS of temperature measurements in the payload ground calibration~\cite {payload_calibration}}{table.32}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {33}{\ignorespaces Columns to be provided in the ascii file for the case of a telescope temperature time series being uploaded by the user. The time series must be provided as a plain ascii file containing the columns indicated, separated by whitespace or tab. Rows for which the first character is \# are ignored.}}{57}{table.33}}
+\newlabel{tab:temperatureUploadFormat}{{33}{57}{Columns to be provided in the ascii file for the case of a telescope temperature time series being uploaded by the user. The time series must be provided as a plain ascii file containing the columns indicated, separated by whitespace or tab. Rows for which the first character is \# are ignored}{table.33}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {34}{\ignorespaces Input parameters to define the orbit trajectory, roll angle and SAA map}}{58}{table.34}}
+\newlabel{tab:orbit1}{{34}{58}{Input parameters to define the orbit trajectory, roll angle and SAA map}{table.34}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {35}{\ignorespaces Input parameters to define telescope temperature variations as a function of the satellite orbit.}}{59}{table.35}}
+\newlabel{tab:orbit2}{{35}{59}{Input parameters to define telescope temperature variations as a function of the satellite orbit}{table.35}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {36}{\ignorespaces Input parameters to define CCD temperature variations as a function of the satellite orbit.}}{60}{table.36}}
+\newlabel{tab:orbit3}{{36}{60}{Input parameters to define CCD temperature variations as a function of the satellite orbit}{table.36}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {37}{\ignorespaces Input parameters to define FEE temperature variations as a function of the satellite orbit.}}{60}{table.37}}
+\newlabel{tab:orbit4}{{37}{60}{Input parameters to define FEE temperature variations as a function of the satellite orbit}{table.37}{}}
+\citation{rollAngleAlgo}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Telescope Simulator}{61}{section.5}}
+\newlabel{sec:Telescope}{{5}{61}{Telescope Simulator}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Focal Plane Projection: {\it  FocalPlaneGenerator}}{61}{subsection.5.1}}
+\newlabel{sec:FocalPlaneGenerator}{{5.1}{61}{Focal Plane Projection: {\it FocalPlaneGenerator}}{subsection.5.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Illustration of how the input parameters to the {\it  FocalPlaneGenerator} module are used to define the position and size of the image sub-array on the CCD.}}{62}{figure.18}}
+\newlabel{fig:subarray}{{18}{62}{Illustration of how the input parameters to the {\it FocalPlaneGenerator} module are used to define the position and size of the image sub-array on the CCD}{figure.18}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {38}{\ignorespaces Input parameters to define the image sub-array}}{63}{table.38}}
+\newlabel{tab:subarray}{{38}{63}{Input parameters to define the image sub-array}{table.38}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}PSF Model: {\it  PSFGenerator}}{64}{subsection.5.2}}
+\newlabel{sec:PSFGenerator}{{5.2}{64}{PSF Model: {\it PSFGenerator}}{subsection.5.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}In flight measured PSFs}{64}{subsubsection.5.2.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces In flight measured PSFs extracted from images obtained during in orbit commissioning, at various locations on the CCD. The CCD coordinates corresponding to the PSF centres are indicated.}}{64}{figure.19}}
+\newlabel{fig:CCDLocationPSF}{{19}{64}{In flight measured PSFs extracted from images obtained during in orbit commissioning, at various locations on the CCD. The CCD coordinates corresponding to the PSF centres are indicated}{figure.19}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}Pre-launch laboratory measured PSFs}{65}{subsubsection.5.2.2}}
+\@writefile{lot}{\contentsline {table}{\numberline {39}{\ignorespaces Nominal white PSFs, radius 12 pixels}}{65}{table.39}}
+\newlabel{tab:psf_meas}{{39}{65}{Nominal white PSFs, radius 12 pixels}{table.39}{}}
+\citation{opticalModel}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.3}Synthetic PSFs}{66}{subsubsection.5.2.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.4}User provided PSF}{66}{subsubsection.5.2.4}}
+\@writefile{lot}{\contentsline {table}{\numberline {40}{\ignorespaces Nominal white PSFs, radius 12 pixels}}{67}{table.40}}
+\newlabel{tab:psf1}{{40}{67}{Nominal white PSFs, radius 12 pixels}{table.40}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {41}{\ignorespaces Misaligned white PSFs, radius 12 pixels}}{68}{table.41}}
+\newlabel{tab:psf2}{{41}{68}{Misaligned white PSFs, radius 12 pixels}{table.41}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {42}{\ignorespaces Nominal white PSFs, radius 15.6 pixels}}{69}{table.42}}
+\newlabel{tab:psf3}{{42}{69}{Nominal white PSFs, radius 15.6 pixels}{table.42}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {43}{\ignorespaces misaligned white PSFs, radius 15.6 pixels}}{70}{table.43}}
+\newlabel{tab:psf4}{{43}{70}{misaligned white PSFs, radius 15.6 pixels}{table.43}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {44}{\ignorespaces Fixed temperature white PSFs}}{71}{table.44}}
+\newlabel{tab:psf5}{{44}{71}{Fixed temperature white PSFs}{table.44}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {45}{\ignorespaces Monochromatic PSFs (radius 12 pixels)}}{72}{table.45}}
+\newlabel{tab:psf_mono}{{45}{72}{Monochromatic PSFs (radius 12 pixels)}{table.45}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.5}Temperature Dependence}{73}{subsubsection.5.2.5}}
+\newlabel{sec:psfTemperature}{{5.2.5}{73}{Temperature Dependence}{subsubsection.5.2.5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.6}Sub-Pixel Positioning of the PSF}{73}{subsubsection.5.2.6}}
+\newlabel{sec:psfPositioning}{{5.2.6}{73}{Sub-Pixel Positioning of the PSF}{subsubsection.5.2.6}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.7}Temporal Oversampling of Jitter and FOV Rotation}{74}{subsubsection.5.2.7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.8}Integrated Flux Normalization}{74}{subsubsection.5.2.8}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.9}Extension of PSF tails}{74}{subsubsection.5.2.9}}
+\newlabel{sec:extendedPSF}{{5.2.9}{74}{Extension of PSF tails}{subsubsection.5.2.9}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.10}Input Parameters}{74}{subsubsection.5.2.10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Comparison of profiles of PSFs generated using the oversampling and interpolation methods, for a case where the offset of the PSF grid and the CCD grid is small (best case, top left), where the offset between the grids is close to half a pixel in both directions (worst case, top right). The bottom plot is the same as the top right but on a log scale in order to show the tails.}}{75}{figure.20}}
+\newlabel{fig:interp}{{20}{75}{Comparison of profiles of PSFs generated using the oversampling and interpolation methods, for a case where the offset of the PSF grid and the CCD grid is small (best case, top left), where the offset between the grids is close to half a pixel in both directions (worst case, top right). The bottom plot is the same as the top right but on a log scale in order to show the tails}{figure.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Left: Correlation plot (top) and noise curves (bottom) for extracted flux (30 pixel aperture) for PSFs positioned using the oversampling and interpolation methods, for 60 second exposures with jitter sampled every second.}}{76}{figure.21}}
+\newlabel{fig:interp2}{{21}{76}{Left: Correlation plot (top) and noise curves (bottom) for extracted flux (30 pixel aperture) for PSFs positioned using the oversampling and interpolation methods, for 60 second exposures with jitter sampled every second}{figure.21}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Images (top) and profiles corresponding to row 511 of each image (bottom) for two PSFs, including extended tails beyond ±96 pixels from the centres, modeled using a $1/r^3$ function. The PSFs correspond to PSF\_Field0\_Dpup2048\_Dwave05nm\_Window.fits in Table\nobreakspace  {}\ref  {tab:psf5} (left) and PSF\_Field1\_def0.000mm\_W\_330\_1100nm\_Dwave5nm\_radius12px\_nominal.fits in Table\nobreakspace  {}\ref  {tab:psf1} (right).}}{77}{figure.22}}
+\newlabel{fig:psfExtension}{{22}{77}{Images (top) and profiles corresponding to row 511 of each image (bottom) for two PSFs, including extended tails beyond ±96 pixels from the centres, modeled using a $1/r^3$ function. The PSFs correspond to PSF\_Field0\_Dpup2048\_Dwave05nm\_Window.fits in Table~\ref {tab:psf5} (left) and PSF\_Field1\_def0.000mm\_W\_330\_1100nm\_Dwave5nm\_radius12px\_nominal.fits in Table~\ref {tab:psf1} (right)}{figure.22}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {46}{\ignorespaces Input parameters for PSF generation}}{78}{table.46}}
+\newlabel{tab:psfgen}{{46}{78}{Input parameters for PSF generation}{table.46}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {47}{\ignorespaces Input parameters for PSF positioning}}{79}{table.47}}
+\newlabel{tab:psfpos}{{47}{79}{Input parameters for PSF positioning}{table.47}{}}
+\citation{Peterson}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Halo Model (Scatter and Ghosts): {\it  HaloGenerator}}{80}{subsection.5.3}}
+\newlabel{sec:HaloGenerator}{{5.3}{80}{Halo Model (Scatter and Ghosts): {\it HaloGenerator}}{subsection.5.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces Scattering halo over the full CCD for a 60 second exposure of a magnitude 9 G0 star located at the centre of the CCD.}}{80}{figure.23}}
+\newlabel{fig:halo}{{23}{80}{Scattering halo over the full CCD for a 60 second exposure of a magnitude 9 G0 star located at the centre of the CCD}{figure.23}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces The total ghost flux as a fraction of the total flux incident on the telescope aperture, as a function of the angular distance of the star from the line of sight. The variation is due to the shift of ghosts and the consequent exit of the shadow of the secondary mirror from the detector.}}{81}{figure.24}}
+\newlabel{fig:ghostFluxFraction}{{24}{81}{The total ghost flux as a fraction of the total flux incident on the telescope aperture, as a function of the angular distance of the star from the line of sight. The variation is due to the shift of ghosts and the consequent exit of the shadow of the secondary mirror from the detector}{figure.24}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {48}{\ignorespaces Input parameters for the {\it  GlobalThroughputGenerator} module.}}{81}{table.48}}
+\newlabel{tab:halo}{{48}{81}{Input parameters for the {\it GlobalThroughputGenerator} module}{table.48}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces Comparison of the flux distributions from diffraction, scattering, and ghosts over the full CCD for a 60 second exposure of a magnitude 9 G0 star located at the centre of the CCD. The contribution from scattering dominates over that from diffraction for radii greater than 155 pixels from the star position. The PSF corresponds to PSF\_Field1\_def0.000mm\_W\_330\_1100nm\_Dwave5nm\_radius12px\_nominal.fits in Table\nobreakspace  {}\ref  {tab:psf1}.}}{82}{figure.25}}
+\newlabel{fig:haloComparison}{{25}{82}{Comparison of the flux distributions from diffraction, scattering, and ghosts over the full CCD for a 60 second exposure of a magnitude 9 G0 star located at the centre of the CCD. The contribution from scattering dominates over that from diffraction for radii greater than 155 pixels from the star position. The PSF corresponds to PSF\_Field1\_def0.000mm\_W\_330\_1100nm\_Dwave5nm\_radius12px\_nominal.fits in Table~\ref {tab:psf1}}{figure.25}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Optical Throughput and Quantum Efficiency: {\it  GlobalThroughputGenerator}}{83}{subsection.5.4}}
+\newlabel{sec:GlobalThroughputGenerator}{{5.4}{83}{Optical Throughput and Quantum Efficiency: {\it GlobalThroughputGenerator}}{subsection.5.4}{}}
+\newlabel{eq:electronProbability1}{{6}{83}{Optical Throughput and Quantum Efficiency: {\it GlobalThroughputGenerator}}{equation.5.6}{}}
+\newlabel{eq:electronProbability2}{{7}{83}{Optical Throughput and Quantum Efficiency: {\it GlobalThroughputGenerator}}{equation.5.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces Telescope optical throughput and quantum efficiency for the e2v CCD47-20-2-G09 chip as a function of wavelength.}}{84}{figure.26}}
+\newlabel{fig:throughput_qe}{{26}{84}{Telescope optical throughput and quantum efficiency for the e2v CCD47-20-2-G09 chip as a function of wavelength}{figure.26}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {49}{\ignorespaces Columns to be provided in the ascii file for the case of the throughput vs wavelength distribution being uploaded by the user. The distribution must be provided as a plain ascii file containing the columns indicated, separated by whitespace or tab. Rows for which the first character is \# are ignored.}}{85}{table.49}}
+\newlabel{tab:throughputUploadFormat}{{49}{85}{Columns to be provided in the ascii file for the case of the throughput vs wavelength distribution being uploaded by the user. The distribution must be provided as a plain ascii file containing the columns indicated, separated by whitespace or tab. Rows for which the first character is \# are ignored}{table.49}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {50}{\ignorespaces Columns to be provided in the ascii file for the case of the QE vs wavelength distribution being uploaded by the user. The distribution must be provided as a plain ascii file containing the columns indicated, separated by whitespace or tab. Rows for which the first character is \# are ignored.}}{85}{table.50}}
+\newlabel{tab:qeUploadFormat}{{50}{85}{Columns to be provided in the ascii file for the case of the QE vs wavelength distribution being uploaded by the user. The distribution must be provided as a plain ascii file containing the columns indicated, separated by whitespace or tab. Rows for which the first character is \# are ignored}{table.50}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {51}{\ignorespaces Input parameters for the {\it  GlobalThroughputGenerator} module.}}{86}{table.51}}
+\newlabel{tab:throughputQE}{{51}{86}{Input parameters for the {\it GlobalThroughputGenerator} module}{table.51}{}}
+\citation{payload_calibration}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Detector Simulator}{87}{section.6}}
+\newlabel{sec:Detector}{{6}{87}{Detector Simulator}{section.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Flat Field: {\it  FlatFieldGenerator}}{87}{subsection.6.1}}
+\newlabel{sec:FlatFieldGenerator}{{6.1}{87}{Flat Field: {\it FlatFieldGenerator}}{subsection.6.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {52}{\ignorespaces Input parameters for the {\it  FlatFieldGenerator} module}}{88}{table.52}}
+\newlabel{tab:flatField1}{{52}{88}{Input parameters for the {\it FlatFieldGenerator} module}{table.52}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {27}{\ignorespaces Empirical flat field frames weighted according to the effective temperature of the target star (see main text for details), for a selected range of effective temperatures, for flat field measurements performed during the 2018 ground calibration campaign for the FM2 chip. The frames correspond to the full 1024$\times $1024 pixels of the exposed part of the CCD. The plotted range in each case is $\pm $ 3 standard deviations around the mean flat field value away from the partially illuminated corners.}}{89}{figure.27}}
+\newlabel{fig:flatField_FM2}{{27}{89}{Empirical flat field frames weighted according to the effective temperature of the target star (see main text for details), for a selected range of effective temperatures, for flat field measurements performed during the 2018 ground calibration campaign for the FM2 chip. The frames correspond to the full 1024$\times $1024 pixels of the exposed part of the CCD. The plotted range in each case is $\pm $ 3 standard deviations around the mean flat field value away from the partially illuminated corners}{figure.27}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {53}{\ignorespaces Input parameters for the {\it  FlatFieldGenerator} module (continued)}}{90}{table.53}}
+\newlabel{tab:flatField2}{{53}{90}{Input parameters for the {\it FlatFieldGenerator} module (continued)}{table.53}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.1}Simulation of Dead Pixels}{91}{subsubsection.6.1.1}}
+\newlabel{sec:deadPixels}{{6.1.1}{91}{Simulation of Dead Pixels}{subsubsection.6.1.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {54}{\ignorespaces Input parameters for simulation of dead pixels}}{91}{table.54}}
+\newlabel{tab:deadPixels}{{54}{91}{Input parameters for simulation of dead pixels}{table.54}{}}
+\citation{payload_calibration}
+\citation{ccd}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Dark Current: {\it  DarkCurrentGenerator}}{92}{subsection.6.2}}
+\newlabel{sec:DarkCurrentGenerator}{{6.2}{92}{Dark Current: {\it DarkCurrentGenerator}}{subsection.6.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {55}{\ignorespaces List of hot pixels, defined as having a dark electron rate of more than 5 electrons per second, for the measured empirical dark frame for the FM2 chip shown in Figure\nobreakspace  {}\ref  {fig:darkFrame}. The $x$ and $y$ positions are relative to the left and bottom edges, respectively, of the exposed part of the CCD.}}{92}{table.55}}
+\newlabel{tab:empiricalHotPixels}{{55}{92}{List of hot pixels, defined as having a dark electron rate of more than 5 electrons per second, for the measured empirical dark frame for the FM2 chip shown in Figure~\ref {fig:darkFrame}. The $x$ and $y$ positions are relative to the left and bottom edges, respectively, of the exposed part of the CCD}{table.55}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {28}{\ignorespaces Empirical dark frame generated by averaging over exposures taken for the FM2 chip at -40\textdegree C (233K) during the 2018 ground calibration, read out using the left amplifier, subtracting the bias and dividing by the gain and by the exposure duration to give a dark frame in electrons/s. Since the readout noise is significant compared to the scale of the dark current, the bias cannot be subtracted perfectly, which results in some pixels being assigned negative values. In the construction of the dark frame, all negative values are set to zero (see bottom left histogram). The top plots show the dark frame image on two different z-axis scales: the majority of pixels have values in the range 0-0.2, the range corresponding to the top left image; whereas the top right plot shows a z-axis scale from 0-2, in order to show the presence of warm/hot pixels. The bottom plots show histograms of the dark frame, on two different scales.}}{93}{figure.28}}
+\newlabel{fig:darkFrame}{{28}{93}{Empirical dark frame generated by averaging over exposures taken for the FM2 chip at -40\textdegree C (233K) during the 2018 ground calibration, read out using the left amplifier, subtracting the bias and dividing by the gain and by the exposure duration to give a dark frame in electrons/s. Since the readout noise is significant compared to the scale of the dark current, the bias cannot be subtracted perfectly, which results in some pixels being assigned negative values. In the construction of the dark frame, all negative values are set to zero (see bottom left histogram). The top plots show the dark frame image on two different z-axis scales: the majority of pixels have values in the range 0-0.2, the range corresponding to the top left image; whereas the top right plot shows a z-axis scale from 0-2, in order to show the presence of warm/hot pixels. The bottom plots show histograms of the dark frame, on two different scales}{figure.28}{}}
+\newlabel{eq:dark}{{8}{94}{Dark Current: {\it DarkCurrentGenerator}}{equation.6.8}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {56}{\ignorespaces Input parameters for the {\it  DarkCurrentGenerator} module}}{95}{table.56}}
+\newlabel{tab:darkCurrent}{{56}{95}{Input parameters for the {\it DarkCurrentGenerator} module}{table.56}{}}
+\citation{telegraphic}
+\citation{telegraphic}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.1}Random Simulation of Hot and Warm Pixels}{96}{subsubsection.6.2.1}}
+\newlabel{sec:hotPixels}{{6.2.1}{96}{Random Simulation of Hot and Warm Pixels}{subsubsection.6.2.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.2}Random Simulation of Telegraphic Pixels}{96}{subsubsection.6.2.2}}
+\newlabel{sec:telegraphicPixels}{{6.2.2}{96}{Random Simulation of Telegraphic Pixels}{subsubsection.6.2.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.3}Manual Simulation of Hot/Warm/Telegraphic Pixels}{96}{subsubsection.6.2.3}}
+\newlabel{sec:manualHotPixels}{{6.2.3}{96}{Manual Simulation of Hot/Warm/Telegraphic Pixels}{subsubsection.6.2.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {29}{\ignorespaces Time series of the number of dark electrons for three example simulated telegraphic pixels over a period of 5 hours.}}{97}{figure.29}}
+\newlabel{fig:telegraphic}{{29}{97}{Time series of the number of dark electrons for three example simulated telegraphic pixels over a period of 5 hours}{figure.29}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {57}{\ignorespaces Input parameters for simulation of hot and warm pixels}}{98}{table.57}}
+\newlabel{tab:hotPixels}{{57}{98}{Input parameters for simulation of hot and warm pixels}{table.57}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {58}{\ignorespaces Input parameters for simulation of telegraphic pixels}}{99}{table.58}}
+\newlabel{tab:telegraphic}{{58}{99}{Input parameters for simulation of telegraphic pixels}{table.58}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {59}{\ignorespaces Input parameters for manual simulation of hot/warm/telegraphic pixels}}{100}{table.59}}
+\newlabel{tab:manualHotPixels}{{59}{100}{Input parameters for manual simulation of hot/warm/telegraphic pixels}{table.59}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Frame Transfer Smearing: {\it  FrameTransferSmearer}}{101}{subsection.6.3}}
+\newlabel{sec:FrameTransferSmearer}{{6.3}{101}{Frame Transfer Smearing: {\it FrameTransferSmearer}}{subsection.6.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {60}{\ignorespaces Input parameters for frame transfer simulation}}{101}{table.60}}
+\newlabel{tab:frameTransfer}{{60}{101}{Input parameters for frame transfer simulation}{table.60}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {30}{\ignorespaces Example of an image with frame transfer, with all noise simulation switched off, for a 9th magnitude G type star, for a 20 second exposure with jitter scaled by factor 3, for a frame transfer clock period of 10 milliseconds (an enhancement by factor 1000 in order to make the smear visible).}}{102}{figure.30}}
+\newlabel{fig:frameTransfer}{{30}{102}{Example of an image with frame transfer, with all noise simulation switched off, for a 9th magnitude G type star, for a 20 second exposure with jitter scaled by factor 3, for a frame transfer clock period of 10 milliseconds (an enhancement by factor 1000 in order to make the smear visible)}{figure.30}{}}
+\citation{binomialSelectionTheorem}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Shot Noise: {\it  ShotNoiseGenerator}}{103}{subsection.6.4}}
+\newlabel{sec:PhotonNoiseGenerator}{{6.4}{103}{Shot Noise: {\it ShotNoiseGenerator}}{subsection.6.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {61}{\ignorespaces Input parameters for the {\it  PhotonNoiseGenerator} module}}{103}{table.61}}
+\newlabel{tab:photonNoise}{{61}{103}{Input parameters for the {\it PhotonNoiseGenerator} module}{table.61}{}}
+\citation{HST_ISR0207}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.5}CosmicRays: {\it  CosmicRayGenerator}}{104}{subsection.6.5}}
+\newlabel{sec:CosmicRayGenerator}{{6.5}{104}{CosmicRays: {\it CosmicRayGenerator}}{subsection.6.5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.5.1}Rate}{104}{subsubsection.6.5.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {31}{\ignorespaces Relative rate of cosmic ray flux within the SAA. This figure is illustrative, to inform on the choice of value for the flux increase. It does not represent the SAA model used in CHEOPSim, which is defined in Figure\nobreakspace  {}\ref  {fig:SAAMap}.}}{105}{figure.31}}
+\newlabel{fig:SAA_rate}{{31}{105}{Relative rate of cosmic ray flux within the SAA. This figure is illustrative, to inform on the choice of value for the flux increase. It does not represent the SAA model used in CHEOPSim, which is defined in Figure~\ref {fig:SAAMap}}{figure.31}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {62}{\ignorespaces Input parameters for simulation of cosmic rays}}{106}{table.62}}
+\newlabel{tab:cosmics}{{62}{106}{Input parameters for simulation of cosmic rays}{table.62}{}}
+\citation{HST_ISR0207}
+\citation{HST_ISR0207}
+\citation{HST_ISR0207}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.5.2}Geometric Model}{107}{subsubsection.6.5.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {32}{\ignorespaces Distribution of the number of pixels passed through by cosmic ray tracks.}}{107}{figure.32}}
+\newlabel{fig:cosmic_npixels}{{32}{107}{Distribution of the number of pixels passed through by cosmic ray tracks}{figure.32}{}}
+\citation{HST_ISR0207}
+\@writefile{lof}{\contentsline {figure}{\numberline {33}{\ignorespaces Distribution of the logarithm of the total number electrons produced along the length the cosmic ray track. The turn on at around 650 electrons corresponds to a minimum track length which occurs for a normal angle of incidence. The tail is cut off at 50000 electrons in order to exclude extremely bright cosmic rays since the tail diminishes more rapidly in the observed HST distribution than in the model described here.}}{108}{figure.33}}
+\newlabel{fig:cosmic_nelectrons}{{33}{108}{Distribution of the logarithm of the total number electrons produced along the length the cosmic ray track. The turn on at around 650 electrons corresponds to a minimum track length which occurs for a normal angle of incidence. The tail is cut off at 50000 electrons in order to exclude extremely bright cosmic rays since the tail diminishes more rapidly in the observed HST distribution than in the model described here}{figure.33}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.6}Full Well Saturation: {\it  FullWellSimulator}}{109}{subsection.6.6}}
+\newlabel{sec:FullWellSimulator}{{6.6}{109}{Full Well Saturation: {\it FullWellSimulator}}{subsection.6.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {63}{\ignorespaces Input parameters for full well simulation}}{109}{table.63}}
+\newlabel{tab:fullWell}{{63}{109}{Input parameters for full well simulation}{table.63}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {34}{\ignorespaces Example of a PSF with saturated pixels and resultant vertical bleeding of the excess charges}}{109}{figure.34}}
+\newlabel{fig:bleeding}{{34}{109}{Example of a PSF with saturated pixels and resultant vertical bleeding of the excess charges}{figure.34}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.6.1}Relation to ADC Saturation}{110}{subsubsection.6.6.1}}
+\citation{ccd}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.7}Charge Transfer Efficiency: {\it  ChargeTransferSimulator}}{111}{subsection.6.7}}
+\newlabel{sec:ChargeTransferSimulator}{{6.7}{111}{Charge Transfer Efficiency: {\it ChargeTransferSimulator}}{subsection.6.7}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.7.1}CTI at Beginning of Life}{111}{subsubsection.6.7.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {35}{\ignorespaces A hot pixel with initial charge 1000 electrons, after application of beginning of life CTE, for an exaggerated case in which the CTE is much worse than reality at 99.95\% for both vertical and horizontal transfers (left), and for the more realistic default CTE values of 99.9999\% vertical and 99.9993\% horizontal (right). The incomplete transfer of charge during frame transfer and during the shifting down of the rows in the storage area during readout, result in tail in the vertical direction. The shifting of the pixels to the left in the readout register results in a smearing of the vertical tail to the right. The sum over the smeared set of pixels equals the value of the unsmeared hot pixel, so no charge is lost.}}{112}{figure.35}}
+\newlabel{fig:cte_bol_hot}{{35}{112}{A hot pixel with initial charge 1000 electrons, after application of beginning of life CTE, for an exaggerated case in which the CTE is much worse than reality at 99.95\% for both vertical and horizontal transfers (left), and for the more realistic default CTE values of 99.9999\% vertical and 99.9993\% horizontal (right). The incomplete transfer of charge during frame transfer and during the shifting down of the rows in the storage area during readout, result in tail in the vertical direction. The shifting of the pixels to the left in the readout register results in a smearing of the vertical tail to the right. The sum over the smeared set of pixels equals the value of the unsmeared hot pixel, so no charge is lost}{figure.35}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {36}{\ignorespaces Top row: PSF before (left) and after (right) application of beginning of life CTE, for an exaggerated case in which the CTE is much worse than reality at 99.95\% for both vertical and horizontal transfers. Middle row: The difference (after-before, left) and the ratio (after/before, right), betwen the images in the top row. Bottom row: same as middle row, but for the more realistic default CTE values of 99.9999\% vertical and 99.9993\% horizontal. The PSF corresponds to a 12th Magnitude G5 star after optical throughput and QE, for an exposure duration of 100s.}}{113}{figure.36}}
+\newlabel{fig:cte_bol_psf}{{36}{113}{Top row: PSF before (left) and after (right) application of beginning of life CTE, for an exaggerated case in which the CTE is much worse than reality at 99.95\% for both vertical and horizontal transfers. Middle row: The difference (after-before, left) and the ratio (after/before, right), betwen the images in the top row. Bottom row: same as middle row, but for the more realistic default CTE values of 99.9999\% vertical and 99.9993\% horizontal. The PSF corresponds to a 12th Magnitude G5 star after optical throughput and QE, for an exposure duration of 100s}{figure.36}{}}
+\citation{ccd}
+\citation{ccd}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.7.2}CTI at End of Life}{114}{subsubsection.6.7.2}}
+\newlabel{sec:cti_eol}{{6.7.2}{114}{CTI at End of Life}{subsubsection.6.7.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {37}{\ignorespaces (Left: Effect of the end of life CTI on a single PSF, corresponding to a 12th magnitude G5 star. Right: Effect on the medium background star field defined in Section\nobreakspace  {}\ref  {sec:starField}. The $z$-axis units are electrons (i.e. optical throughput and QE applied), corresponding to an exposure duration of 100s.}}{115}{figure.37}}
+\newlabel{fig:cti_eol}{{37}{115}{(Left: Effect of the end of life CTI on a single PSF, corresponding to a 12th magnitude G5 star. Right: Effect on the medium background star field defined in Section~\ref {sec:starField}. The $z$-axis units are electrons (i.e. optical throughput and QE applied), corresponding to an exposure duration of 100s}{figure.37}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {38}{\ignorespaces Cumulative sum of pixel values (electrons) along the column of pixels passing upwards through the centre of the PSF in Figure\nobreakspace  {}\ref  {fig:cti_eol} (left), with and without the CTI effect switched on. It can be seen that the cumulative charge tends to the same value in both cases, such that no charge is lost except for the part of the tail which extends above the top of the sub-array.}}{115}{figure.38}}
+\newlabel{fig:cti_eol_profile}{{38}{115}{Cumulative sum of pixel values (electrons) along the column of pixels passing upwards through the centre of the PSF in Figure~\ref {fig:cti_eol} (left), with and without the CTI effect switched on. It can be seen that the cumulative charge tends to the same value in both cases, such that no charge is lost except for the part of the tail which extends above the top of the sub-array}{figure.38}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {64}{\ignorespaces Input parameters for charge transfer efficiency simulation}}{116}{table.64}}
+\newlabel{tab:chargeTransfer}{{64}{116}{Input parameters for charge transfer efficiency simulation}{table.64}{}}
+\citation{payload_calibration}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.8}Electronic Bias and Gain: {\it  BiasGenerator}}{117}{subsection.6.8}}
+\newlabel{sec:BiasGenerator}{{6.8}{117}{Electronic Bias and Gain: {\it BiasGenerator}}{subsection.6.8}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.8.1}Gain Dependence on Bias Voltages (Analog Electronics Stability)}{117}{subsubsection.6.8.1}}
+\newlabel{sec:gainFormula}{{6.8.1}{117}{Gain Dependence on Bias Voltages (Analog Electronics Stability)}{subsubsection.6.8.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {65}{\ignorespaces Bias voltages. Note that the values in the table corresponding to the VOD, VRD and VOG voltages apply to those voltages relative to the VSS voltage.}}{117}{table.65}}
+\newlabel{tab:voltages}{{65}{117}{Bias voltages. Note that the values in the table corresponding to the VOD, VRD and VOG voltages apply to those voltages relative to the VSS voltage}{table.65}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.8.2}Gain Non-Linearity}{117}{subsubsection.6.8.2}}
+\newlabel{sec:nonlinearity}{{6.8.2}{117}{Gain Non-Linearity}{subsubsection.6.8.2}{}}
+\citation{wikipedia_cubic}
+\citation{wikipedia_cubic}
+\newlabel{eq:cubic}{{9}{118}{Gain Non-Linearity}{equation.6.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {39}{\ignorespaces Quadratic spline function used to define the non-linearity correction to be used by Data Reduction, for 230kHz (top) and 100kHz (bottom). CHEOPSim applies the inverse of this correction.}}{119}{figure.39}}
+\newlabel{fig:ccdNonLinearity1}{{39}{119}{Quadratic spline function used to define the non-linearity correction to be used by Data Reduction, for 230kHz (top) and 100kHz (bottom). CHEOPSim applies the inverse of this correction}{figure.39}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {40}{\ignorespaces Inverse correction function used to define the CCD non-linearity for 230kHz (top) and 100kHz (bottom). The inverse correction function is extended to higher number of electrons than the last interval of the spline function, by extending the polynomial defined for the last interval (dashed line).}}{120}{figure.40}}
+\newlabel{fig:ccdNonLinearity2}{{40}{120}{Inverse correction function used to define the CCD non-linearity for 230kHz (top) and 100kHz (bottom). The inverse correction function is extended to higher number of electrons than the last interval of the spline function, by extending the polynomial defined for the last interval (dashed line)}{figure.40}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {41}{\ignorespaces Ratio of the numbers of electrons before and after applying the inverse of the CCD non-linearity correction as a function of the value before applying the inverse correction, for 230kHz (top) and 100kHz (bottom).}}{121}{figure.41}}
+\newlabel{fig:ccdNonLinearity3}{{41}{121}{Ratio of the numbers of electrons before and after applying the inverse of the CCD non-linearity correction as a function of the value before applying the inverse correction, for 230kHz (top) and 100kHz (bottom)}{figure.41}{}}
+\citation{payload_calibration}
+\citation{payload_calibration}
+\citation{payload_calibration}
+\citation{payload_calibration}
+\citation{payload_calibration}
+\citation{payload_calibration}
+\citation{payload_calibration}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.8.3}Bias Offset and Read Noise}{122}{subsubsection.6.8.3}}
+\newlabel{sec:biasoffset}{{6.8.3}{122}{Bias Offset and Read Noise}{subsubsection.6.8.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.8.4}Conversion from Electrons to ADU}{122}{subsubsection.6.8.4}}
+\newlabel{eq:bias}{{10}{122}{Conversion from Electrons to ADU}{equation.6.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {42}{\ignorespaces Bias frames as measured during the 2018 ground calibration\nobreakspace  {}\cite  {payload_calibration} for the left amplifier, for readout freqencies of 100kHz (left) and 230kHz (right). The bottom plots show histograms of the image contents.}}{123}{figure.42}}
+\newlabel{fig:bias_offset}{{42}{123}{Bias frames as measured during the 2018 ground calibration~\cite {payload_calibration} for the left amplifier, for readout freqencies of 100kHz (left) and 230kHz (right). The bottom plots show histograms of the image contents}{figure.42}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {43}{\ignorespaces readout noise as measured during the 2018 ground calibration\nobreakspace  {}\cite  {payload_calibration} for the left amplifier, for readout freqencies of 100kHz (left) and 230kHz (right). The bottom plots show histograms of the image contents.}}{124}{figure.43}}
+\newlabel{fig:readout_noise}{{43}{124}{readout noise as measured during the 2018 ground calibration~\cite {payload_calibration} for the left amplifier, for readout freqencies of 100kHz (left) and 230kHz (right). The bottom plots show histograms of the image contents}{figure.43}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {66}{\ignorespaces Input parameters for the BiasGenerator module}}{125}{table.66}}
+\newlabel{tab:bias}{{66}{125}{Input parameters for the BiasGenerator module}{table.66}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {67}{\ignorespaces Input parameters for the BiasGenerator module (continued)}}{126}{table.67}}
+\newlabel{tab:bias2}{{67}{126}{Input parameters for the BiasGenerator module (continued)}{table.67}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Output}{127}{section.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Image Writing: {\it  ImageWriter}}{127}{subsection.7.1}}
+\newlabel{sec:ImageWriter}{{7.1}{127}{Image Writing: {\it ImageWriter}}{subsection.7.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.1.1}Omission of images during Earth occultation, high stray light, and SAA}{128}{subsubsection.7.1.1}}
+\newlabel{sec:omitImages}{{7.1.1}{128}{Omission of images during Earth occultation, high stray light, and SAA}{subsubsection.7.1.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {44}{\ignorespaces Image and imagette stacking order as a funtion of exposure time}}{129}{figure.44}}
+\newlabel{fig:LUT_image_stacking}{{44}{129}{Image and imagette stacking order as a funtion of exposure time}{figure.44}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {68}{\ignorespaces Output sub-directories}}{129}{table.68}}
+\newlabel{tab:subdirs}{{68}{129}{Output sub-directories}{table.68}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {69}{\ignorespaces Input parameters for {\it  ImageWriter}}}{130}{table.69}}
+\newlabel{tab:output1}{{69}{130}{Input parameters for {\it ImageWriter}}{table.69}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {70}{\ignorespaces Input parameters for {\it  ImageWriter} (continued)}}{131}{table.70}}
+\newlabel{tab:output2}{{70}{131}{Input parameters for {\it ImageWriter} (continued)}{table.70}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {71}{\ignorespaces Input parameters for {\it  ImageWriter} (continued)}}{132}{table.71}}
+\newlabel{tab:output3}{{71}{132}{Input parameters for {\it ImageWriter} (continued)}{table.71}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {72}{\ignorespaces Input parameters for {\it  ImageWriter} (continued)}}{133}{table.72}}
+\newlabel{tab:output4}{{72}{133}{Input parameters for {\it ImageWriter} (continued)}{table.72}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.1.2}CCD Margins: Dark, Blank and Overscan Reference Columns and Rows}{134}{subsubsection.7.1.2}}
+\newlabel{sec:ccdMargins}{{7.1.2}{134}{CCD Margins: Dark, Blank and Overscan Reference Columns and Rows}{subsubsection.7.1.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {45}{\ignorespaces Arrangement of dark, blank and overscan reference columns and rows. If the redundant readout hardware is used rather than main, the overscan column is on the right rather than on the left.}}{134}{figure.45}}
+\newlabel{fig:ccdMargins}{{45}{134}{Arrangement of dark, blank and overscan reference columns and rows. If the redundant readout hardware is used rather than main, the overscan column is on the right rather than on the left}{figure.45}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {73}{\ignorespaces FITS extensions to the main SCI\_RAW\_SubArray image for dark, blank and overscan reference columns/rows for the case in which the full 2D information for each region is stored as an image. Note that if the redundant readout hardware is used rather than main, the overscan column is on the right rather than on the left, and the data structure is SCI\_RAW\_OverscanRight rather than SCI\_RAW\_OverscanLeft.}}{135}{table.73}}
+\newlabel{tab:ccdMarginImages}{{73}{135}{FITS extensions to the main SCI\_RAW\_SubArray image for dark, blank and overscan reference columns/rows for the case in which the full 2D information for each region is stored as an image. Note that if the redundant readout hardware is used rather than main, the overscan column is on the right rather than on the left, and the data structure is SCI\_RAW\_OverscanRight rather than SCI\_RAW\_OverscanLeft}{table.73}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {74}{\ignorespaces Input parameters relating to the CCD margins structures}}{136}{table.74}}
+\newlabel{tab:ccdMargins}{{74}{136}{Input parameters relating to the CCD margins structures}{table.74}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.1.3}Truth Information}{137}{subsubsection.7.1.3}}
+\newlabel{sec:truth}{{7.1.3}{137}{Truth Information}{subsubsection.7.1.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {75}{\ignorespaces Truth information associated to a given image}}{138}{table.75}}
+\newlabel{tab:truthquantities}{{75}{138}{Truth information associated to a given image}{table.75}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {76}{\ignorespaces Input parameters for output of truth information}}{139}{table.76}}
+\newlabel{tab:truth}{{76}{139}{Input parameters for output of truth information}{table.76}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Houskeeping Data Writing: {\it  HKWriter}}{140}{subsection.7.2}}
+\newlabel{sec:HKWriter}{{7.2}{140}{Houskeeping Data Writing: {\it HKWriter}}{subsection.7.2}{}}
+\citation{DRP}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Photometry: {\it  DataReduction}}{141}{subsection.7.3}}
+\newlabel{sec:DataReduction}{{7.3}{141}{Photometry: {\it DataReduction}}{subsection.7.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.1}Flat Field Correction}{141}{subsubsection.7.3.1}}
+\newlabel{sec:flatFieldCorrection}{{7.3.1}{141}{Flat Field Correction}{subsubsection.7.3.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.2}Noise Curve Generation}{141}{subsubsection.7.3.2}}
+\newlabel{sec:noiseCurve}{{7.3.2}{141}{Noise Curve Generation}{subsubsection.7.3.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {77}{\ignorespaces Input parameters for light curve extraction}}{143}{table.77}}
+\newlabel{tab:photometry}{{77}{143}{Input parameters for light curve extraction}{table.77}{}}
+\bibcite{PHOENIX}{1}
+\bibcite{MandelAgol}{2}
+\bibcite{AgolCode}{3}
+\bibcite{limbDarkening}{4}
+\bibcite{claret_bloeman}{5}
+\bibcite{stellarParameters}{6}
+\bibcite{limbDarkening_code}{7}
+\bibcite{granularity}{8}
+\bibcite{variation}{9}
+\bibcite{HelenGiles}{10}
+\bibcite{rollAngleAlgo}{11}
+\bibcite{HST_ETC}{12}
+\bibcite{opticalModel}{13}
+\bibcite{Peterson}{14}
+\bibcite{ccd}{15}
+\bibcite{telegraphic}{16}
+\bibcite{binomialSelectionTheorem}{17}
+\bibcite{HST_ISR0207}{18}
+\bibcite{Wiedemann}{19}
+\bibcite{payload_calibration}{20}
+\bibcite{DRP}{21}
+\bibcite{wikipedia_cubic}{22}

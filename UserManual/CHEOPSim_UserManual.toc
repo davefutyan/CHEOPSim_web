@@ -1,0 +1,73 @@
+\contentsline {section}{\numberline {1}General Description}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}context}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Components}{4}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Software Overview}{4}{subsection.1.3}
+\contentsline {section}{\numberline {2}Configuration}{5}{section.2}
+\contentsline {subsection}{\numberline {2.1}Visit Configuration}{5}{subsection.2.1}
+\contentsline {section}{\numberline {3}Source Simulator}{9}{section.3}
+\contentsline {subsection}{\numberline {3.1}Field of View and Stellar Flux: {\it StarProducer}}{9}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Field of View}{9}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Star Field}{12}{subsubsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.3}Background Star Field}{14}{subsubsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.4}Flux Calculation}{16}{subsubsection.3.1.4}
+\contentsline {subsection}{\numberline {3.2}Transit Model: {\it TransitFluxModulator}}{22}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Limb Darkening}{24}{subsubsection.3.2.1}
+\contentsline {subsection}{\numberline {3.3}Stellar Noise: {\it StellarNoiseFluxModulator}}{29}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Stellar Variation: {\it StellarVariationFluxModulator}}{32}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}User Flux Fime Series: {\it UserFluxModifier}}{34}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Zodiacal Light: {\it ZodiacalLightGenerator}}{35}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}Stray Light: {\it StrayLightGenerator}}{38}{subsection.3.7}
+\contentsline {section}{\numberline {4}Satellite Simulator}{41}{section.4}
+\contentsline {subsection}{\numberline {4.1}Jitter Model: {\it JitterProducer}}{41}{subsection.4.1}
+\contentsline {subparagraph}{48hrAOCSTimeseries2016\_simu*\_1s.fits}{41}{section*.2}
+\contentsline {subparagraph}{All other AOCS time series}{41}{section*.3}
+\contentsline {subsection}{\numberline {4.2}Orbit Model: {\it OrbitSimulator}}{51}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Orbit Trajectory, Pointing Jitter and Roll Angle}{51}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}South Atlantic Anomaly (SAA) Flag, angles to Sun, Moon and Earth Limb, and Earth Occultation Flag}{54}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Temperature Models}{56}{subsubsection.4.2.3}
+\contentsline {section}{\numberline {5}Telescope Simulator}{61}{section.5}
+\contentsline {subsection}{\numberline {5.1}Focal Plane Projection: {\it FocalPlaneGenerator}}{61}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}PSF Model: {\it PSFGenerator}}{64}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}In flight measured PSFs}{64}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}Pre-launch laboratory measured PSFs}{65}{subsubsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.3}Synthetic PSFs}{66}{subsubsection.5.2.3}
+\contentsline {subsubsection}{\numberline {5.2.4}User provided PSF}{66}{subsubsection.5.2.4}
+\contentsline {subsubsection}{\numberline {5.2.5}Temperature Dependence}{73}{subsubsection.5.2.5}
+\contentsline {subsubsection}{\numberline {5.2.6}Sub-Pixel Positioning of the PSF}{73}{subsubsection.5.2.6}
+\contentsline {subsubsection}{\numberline {5.2.7}Temporal Oversampling of Jitter and FOV Rotation}{74}{subsubsection.5.2.7}
+\contentsline {subsubsection}{\numberline {5.2.8}Integrated Flux Normalization}{74}{subsubsection.5.2.8}
+\contentsline {subsubsection}{\numberline {5.2.9}Extension of PSF tails}{74}{subsubsection.5.2.9}
+\contentsline {subsubsection}{\numberline {5.2.10}Input Parameters}{74}{subsubsection.5.2.10}
+\contentsline {subsection}{\numberline {5.3}Halo Model (Scatter and Ghosts): {\it HaloGenerator}}{80}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Optical Throughput and Quantum Efficiency: {\it GlobalThroughputGenerator}}{83}{subsection.5.4}
+\contentsline {section}{\numberline {6}Detector Simulator}{87}{section.6}
+\contentsline {subsection}{\numberline {6.1}Flat Field: {\it FlatFieldGenerator}}{87}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}Simulation of Dead Pixels}{91}{subsubsection.6.1.1}
+\contentsline {subsection}{\numberline {6.2}Dark Current: {\it DarkCurrentGenerator}}{92}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}Random Simulation of Hot and Warm Pixels}{96}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}Random Simulation of Telegraphic Pixels}{96}{subsubsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.3}Manual Simulation of Hot/Warm/Telegraphic Pixels}{96}{subsubsection.6.2.3}
+\contentsline {subsection}{\numberline {6.3}Frame Transfer Smearing: {\it FrameTransferSmearer}}{101}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Shot Noise: {\it ShotNoiseGenerator}}{103}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}CosmicRays: {\it CosmicRayGenerator}}{104}{subsection.6.5}
+\contentsline {subsubsection}{\numberline {6.5.1}Rate}{104}{subsubsection.6.5.1}
+\contentsline {subsubsection}{\numberline {6.5.2}Geometric Model}{107}{subsubsection.6.5.2}
+\contentsline {subsection}{\numberline {6.6}Full Well Saturation: {\it FullWellSimulator}}{109}{subsection.6.6}
+\contentsline {subsubsection}{\numberline {6.6.1}Relation to ADC Saturation}{110}{subsubsection.6.6.1}
+\contentsline {subsection}{\numberline {6.7}Charge Transfer Efficiency: {\it ChargeTransferSimulator}}{111}{subsection.6.7}
+\contentsline {subsubsection}{\numberline {6.7.1}CTI at Beginning of Life}{111}{subsubsection.6.7.1}
+\contentsline {subsubsection}{\numberline {6.7.2}CTI at End of Life}{114}{subsubsection.6.7.2}
+\contentsline {subsection}{\numberline {6.8}Electronic Bias and Gain: {\it BiasGenerator}}{117}{subsection.6.8}
+\contentsline {subsubsection}{\numberline {6.8.1}Gain Dependence on Bias Voltages (Analog Electronics Stability)}{117}{subsubsection.6.8.1}
+\contentsline {subsubsection}{\numberline {6.8.2}Gain Non-Linearity}{117}{subsubsection.6.8.2}
+\contentsline {subsubsection}{\numberline {6.8.3}Bias Offset and Read Noise}{122}{subsubsection.6.8.3}
+\contentsline {subsubsection}{\numberline {6.8.4}Conversion from Electrons to ADU}{122}{subsubsection.6.8.4}
+\contentsline {section}{\numberline {7}Output}{127}{section.7}
+\contentsline {subsection}{\numberline {7.1}Image Writing: {\it ImageWriter}}{127}{subsection.7.1}
+\contentsline {subsubsection}{\numberline {7.1.1}Omission of images during Earth occultation, high stray light, and SAA}{128}{subsubsection.7.1.1}
+\contentsline {subsubsection}{\numberline {7.1.2}CCD Margins: Dark, Blank and Overscan Reference Columns and Rows}{134}{subsubsection.7.1.2}
+\contentsline {subsubsection}{\numberline {7.1.3}Truth Information}{137}{subsubsection.7.1.3}
+\contentsline {subsection}{\numberline {7.2}Houskeeping Data Writing: {\it HKWriter}}{140}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Photometry: {\it DataReduction}}{141}{subsection.7.3}
+\contentsline {subsubsection}{\numberline {7.3.1}Flat Field Correction}{141}{subsubsection.7.3.1}
+\contentsline {subsubsection}{\numberline {7.3.2}Noise Curve Generation}{141}{subsubsection.7.3.2}
