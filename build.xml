@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<project name="CHEOPSim_web" default="war" basedir="/Users/futyand/git_repo/CHEOPSim_web">
+
+	<property name="project.fullname" value="cheopsim.unige" />
+	<property name="project.description" value="CHEOPSim web interface" />
+	<property name="project.author" value="David.Futyan at unige.ch" />
+	<property name="project.version" value="v1.0" />
+
+	<property name="logdir" value="logs" />
+	<property name="lib" value="${basedir}/lib" />
+	<property name="conf" value="${basedir}/conf" />
+	<property name="classes" value="${basedir}/build" />
+	<property name="dist" value="${basedir}/dist" />
+	<property name="src" value="${basedir}/WEB-INF/classes" />
+	<property name="tomcat" value="/usr/local/apache-tomcat-7.0.50/webapps" />
+
+	<path id="build.class.path">
+            <fileset dir="/usr/local/apache-tomcat-7.0.50/lib/" includes="*.jar"/>
+            <fileset dir="${classes}" />
+        </path>
+
+	<target name="init" description="Initialise the build">
+		<mkdir dir="${classes}" />
+		<mkdir dir="${dist}" />
+	</target>
+
+	<target name="compile" depends="init" description="Compile the Java classes">
+		<javac destdir="${classes}" debug="on" srcdir="${src}" classpathref="build.class.path" deprecation="yes" includeantruntime="false" />
+	</target>
+
+	<target name="clean" depends="" description="Clean up">
+		<delete dir="${classes}" />
+		<delete dir="${dist}" />
+	</target>
+
+    <target name="war" depends="compile" description="Create the war file">
+        <war destfile="${dist}/cheopsim.war" webxml="${basedir}/WEB-INF/web.xml">
+            <fileset dir="${basedir}"/>
+            <classes dir="${classes}"/>
+        </war>
+    </target>
+
+</project>
