@@ -2,7 +2,7 @@
 
 This package provides a web interface which can be used to generate configuration files for the CHEOPS simulator [CHEOPSim](https://github.com/davefutyan/CHEOPSim).
 
-The interface can be viewed via the index.html file. Using it to generate a configuration file requires an installation of Apache Tomcat.
+The interface can be previewed via the [index.html file](https://htmlpreview.github.io/?https://github.com/davefutyan/CHEOPSim_web/blob/main/index.html). Using it to generate a configuration file requires an installation of Apache Tomcat.
 
 <h3>Requirements</h3>
 
